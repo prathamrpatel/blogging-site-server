@@ -26,6 +26,7 @@ const server = async () => {
       origin: [
         'http://localhost:3000',
         'https://blogging-site-frontend.herokuapp.com/',
+        'https://blogging-site-backend.herokuapp.com/',
       ],
       credentials: true,
     })

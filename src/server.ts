@@ -21,6 +21,8 @@ const server = async () => {
   const redisClient = new Redis(process.env.REDIS_URL as any);
   const RedisStore = connectRedis(session);
 
+  app.set('trust proxy', 1);
+
   app.use(
     cors({
       origin: 'https://blogging-site-frontend.herokuapp.com',

@@ -23,7 +23,10 @@ const server = async () => {
 
   app.use(
     cors({
-      origin: ['http://localhost:3000'],
+      origin: [
+        'http://localhost:3000',
+        'https://blogging-site-frontend.herokuapp.com/',
+      ],
       credentials: true,
     })
   );

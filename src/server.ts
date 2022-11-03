@@ -21,16 +21,7 @@ const server = async () => {
   const redisClient = new Redis(process.env.REDIS_URL as any);
   const RedisStore = connectRedis(session);
 
-  app.use(
-    cors({
-      origin: [
-        'http://localhost:3000',
-        'https://blogging-site-frontend.herokuapp.com/',
-        'https://blogging-site-backend.herokuapp.com/',
-      ],
-      credentials: true,
-    })
-  );
+  app.use(cors());
 
   app.use(
     session({

@@ -43,7 +43,7 @@ const server = async () => {
       cookie: {
         maxAge: 1000 * 60 * 60 * 24 * 7,
         httpOnly: true,
-        sameSite: 'lax',
+        sameSite: 'none',
         secure: PRODUCTION,
       },
     })

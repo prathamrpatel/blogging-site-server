@@ -1,3 +1,3 @@
-Node
-TypeScript
+Node <br>
+TypeScript <br>
 GraphQL
